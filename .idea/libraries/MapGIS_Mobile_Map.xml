@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MapGIS_Mobile_Map">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/MapGIS_Mobile_Map.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

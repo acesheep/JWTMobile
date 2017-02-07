@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MapGIS_Mobile_POI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/MapGIS_Mobile_POI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
