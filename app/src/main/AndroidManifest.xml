@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zondy.jwt.jwtmobile">
+
+    <!-- androidpn start -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 访问电话状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 访问网络连接，可能产生GPRS流量 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> <!-- 改变WiFi状态 -->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!-- 允许振动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> <!-- 允许程序开机自动运行 -->
+    <!-- androidpn end -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 显示系统窗口 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- 录制声音通过手机或耳机的麦克 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/> <!-- 用户解锁 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/> <!-- 允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!--  -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/> <!-- 允许读写系统设置项 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> <!-- 挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- 通过GPS芯片接收卫星的定位信息，定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/> <!-- 允许程序访问额外的定位提供者指令 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/> <!-- 改变网络状态如是否能联网 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/> <!-- 读取系统底层日志 -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 允许使用相机 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/> <!-- 允许拨打电话 -->
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.impl.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.impl.ScrollActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.SearchActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.SearchActivityOld"
+            android:launchMode="singleTop"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.ScrollActivityResult"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.ScrollActivityResultOld"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme"
+            ></activity>
+        <activity
+            android:name=".view.impl.SearchResultsItemActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme"
+            ></activity>
+        <activity
+            android:name=".view.impl.SettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme"
+            >
+        </activity>
+        <activity
+            android:name=".view.impl.ContactsActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme"
+            ></activity>
+        <activity
+            android:name=".view.impl.ContactsItemActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme"
+            ></activity>
+        <activity
+            android:name=".view.impl.SearchMoreActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.SettingAboutJWTActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.SettingFunctionIntroduceActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <activity
+            android:name=".view.impl.SettingAccountInfo"
+            android:launchMode="singleTask"
+            android:theme="@style/CollapsingToolbarTheme">
+        </activity>
+        <service
+            android:name=".service.GPSService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zondy.service.intent.action.ServiceRepeat"></action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

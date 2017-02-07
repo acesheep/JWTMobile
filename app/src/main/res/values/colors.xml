@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_color_0">#E0E0E0</color><!-- 灰度值：0;灰度值越大，颜色越深-->
+    <color name="gray_color_1">#999999</color><!-- 灰度值：1;灰度值越大，颜色越深-->
+    <color name="gray_color_2">#666666</color><!-- 灰度值：2;灰度值越大，颜色越深-->
+    <color name="gray_color_3">#333333</color><!-- 灰度值：3;灰度值越大，颜色越深 -->
+
+    <!-- 关于actionBbar -->
+    <color name="actionbar_title_color">#002D4A</color> <!-- Color.rgb(0, 156, 131) -->
+    <color name="actionbar_color">#437CFD</color> <!-- Color.rgb(0, 156, 131) -->
+    <color name="actionbar_color_deeper">#205ADD</color>
+    <color name="actionbar_color_lighter">#588BFD</color>
+
+    <color name="actionbar_color_red">#FF4A41</color> <!-- Color.rgb(0, 156, 131) -->
+    <color name="actionbar_color_red_deeper">#F6382E</color>
+
+    <color name="actionbar_color_gray">#CBCBCB</color> <!-- Color.rgb(0, 156, 131) -->
+    <color name="actionbar_color_gray_deeper">#666666</color>
+    <color name="partTranslucent">#39000000</color>
+</resources>

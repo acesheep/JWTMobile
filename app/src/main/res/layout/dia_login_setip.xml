@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/shape_la_et_bg"
+    android:gravity="center"
+    android:minHeight="200dp"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/common_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="服务地址  " />
+
+        <EditText
+            android:id="@+id/et_ipno"
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_la_et_bg"
+            android:gravity="left|top"
+            android:hint="请输入ip"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:text="127.0.0.1" >
+
+            <!-- "127.0.0.1","120.194.101.46","192.168.10.217" -->
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            style="@style/common_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="服务端口  " />
+
+        <EditText
+            android:id="@+id/et_port"
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_la_et_bg"
+            android:gravity="left|top"
+            android:hint="请输入端口号"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="9096/fl1" />
+        <!-- android:text="9080/zdsm""9096/fl1" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            style="@style/common_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="推送地址  " />
+
+        <EditText
+            android:id="@+id/et_push_ipno"
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_la_et_bg"
+            android:gravity="left|top"
+            android:hint="请输入推送服务器的ip"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:text="127.0.0.1" >
+
+            <!-- android:text="127.0.0.1" -->
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            style="@style/common_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="推送端口  " />
+
+        <EditText
+            android:id="@+id/et_push_port"
+            style="@style/common_textview_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_la_et_bg"
+            android:gravity="left|top"
+            android:hint="请输入推送服务器端口号"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:text="9092" />
+        <!-- android:text="9101""9092" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            style="@style/textview_actionbar_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/textview_actionbar_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="取消"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_setip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置ip"
+        android:visibility="gone" />
+
+</LinearLayout>

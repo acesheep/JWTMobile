@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f3f3f3"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="功能介绍"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="        移动处警平台是指公安机关民警使用智能手持终端、笔记本电脑等警用移动终端，以国内通信运营商4G网络为承载网络，曹勇规范的安全措施接入公
+        安信息网开展信息查询、数据录入、业务办理等警务活动的警用装备。\n        本系统暂开发警情处理，警员通讯录，警员报备等功能，其中警情处
+        理为出警警员手持设备到现场进行跟踪处理，及时反馈警情详细信息。 通讯录为本市所有警员的联系信息，可方便及时的进行沟通，增强了处警过程中的便捷性。警力
+        报备则为警务有条不紊的开展奠定了很好的基础。\n        持有此设备时，严禁违反相关管理规定，使用移动警务终端为非警务工作提供信息查询，未经批准出借
+        或者允许非公安民警使用移动警务终端设备。"
+        android:textColor="@color/gray_color_3"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+int attr allowHorizontalScroll 0x7f010004
+int attr exitOffset 0x7f010002
+int attr isSupportExit 0x7f010005
+int attr maxOffset 0x7f010001
+int attr minOffset 0x7f010000
+int attr mode 0x7f010003
+int id close 0x7f030000
+int id exit 0x7f030001
+int id open 0x7f030002
+int string app_name 0x7f020000
+int[] styleable ScrollLayout { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005 }
+int styleable ScrollLayout_allowHorizontalScroll 4
+int styleable ScrollLayout_exitOffset 2
+int styleable ScrollLayout_isSupportExit 5
+int styleable ScrollLayout_maxOffset 1
+int styleable ScrollLayout_minOffset 0
+int styleable ScrollLayout_mode 3

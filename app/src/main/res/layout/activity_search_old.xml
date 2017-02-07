@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_color_0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/iv_search_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_huijiantou"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/bg_sousuolan"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/sousuotu"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_sousuo"
+                />
+
+            <EditText
+                android:id="@+id/et_activity_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/sousuotu"
+                android:background="@null"
+                android:hint="搜索"
+                android:maxLines="1"/>
+
+            <ImageView
+                android:id="@+id/iv_search_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_yuanhuix"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_bg"
+            android:padding="2dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+
+                android:button="@null"
+                android:checked="false"
+                android:id="@+id/cb_meishi"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="美食"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_jiudian"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="酒店"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_yinhang"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="银行"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_xiyu"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="洗浴"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:button="@null"
+                android:id="@+id/cb_wangba"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="网吧"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:button="@null"
+                android:id="@+id/cb_zuliao"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="足疗"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_xiaochikuaican"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="小吃快餐"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_cesuo"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="厕所"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_jiuba"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="酒吧"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_ditiezhan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="地铁站"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <CheckBox
+                android:id="@+id/cb_dianyingyuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="电影院"
+                android:textColor="@drawable/selector_checkbox_text_color"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yuanhuikuang"
+                android:gravity="center"
+                android:text="更多>"
+                android:textColor="@color/gray_color_1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/gray_color_0">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="搜索历史记录"
+            android:textSize="16sp"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_clear_history"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="33dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/bg_sousuolan"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="清 空"-->
+            <!--android:textSize="16sp"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/gray_color_0"></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/btn_clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="清空历史记录"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

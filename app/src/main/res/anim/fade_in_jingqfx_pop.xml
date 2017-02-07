@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- 从左上角扩大-->  
+  <scale   xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"    
+        android:fromXScale="0.001"   
+        android:toXScale="1.0"     
+        android:fromYScale="0.001"     
+        android:toYScale="1.0"     
+        android:pivotX="100%"    
+        android:pivotY="10%"    
+        android:duration="200" />    
+        <!-- interpolator 设置动画的变化率,如加速,减速,弹跳,重复等 -->
+        <!-- scale 设置缩放比例 -->
+        <!-- pivot 动画执行的中心点 -->
+        <!-- duration 动画持续时间长度,单位ms -->
