@@ -25,7 +25,7 @@ import static android.R.string.ok;
 
 public class MyApplication extends Application {
     public final static boolean IS_PRODUCT_ENVIRONMENT = true;
-
+    public final static boolean IS_TEST_JINGQLIST = true;
     @Override
     public void onCreate() {
         super.onCreate();
