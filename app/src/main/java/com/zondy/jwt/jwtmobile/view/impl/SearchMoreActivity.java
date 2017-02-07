@@ -20,6 +20,7 @@ import butterknife.OnClick;
 
 /**
  * Created by sheep on 2017/1/19.
+ * 仿百度地图 搜索更多选项
  */
 
 public class SearchMoreActivity extends BaseActivity {
